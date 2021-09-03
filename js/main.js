@@ -5,6 +5,5 @@ const hideMessage = (e) => {
 }
 
 document.getElementById('message-danger').addEventListener('click', hideMessage)
-document
-  .getElementById('message-warning')
-  .addEventListener('click', hideMessage)
+document.getElementById('message-warning').addEventListener('click', hideMessage)
+document.getElementById('message-cookies').addEventListener('click', hideMessage)
