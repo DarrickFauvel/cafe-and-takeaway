@@ -1,3 +1,15 @@
+.jumbotron__bg {
+  background: url(../img/hero__alex-harmuth-zIJfhf0VSvw-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom -50px left 0;
+}
+
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  text-shadow: 0 0 10px white;
+}
+
 footer {
   font-size: 0.8rem;
 }
