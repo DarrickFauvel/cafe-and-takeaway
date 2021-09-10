@@ -12,20 +12,13 @@
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin menu.html -d dist --htmlmin -o dist/menu.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "keywords": [],
   "author": "Darrick Fauvel",
   "license": "ISC",
-  "dependencies": {
-    "@popperjs/core": "^2.10.1",
-    "bootstrap": "^4.5.2",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.6.0"
-  },
   "devDependencies": {
     "copyfiles": "^2.2.0",
     "imagemin-cli": "^5.1.0",
