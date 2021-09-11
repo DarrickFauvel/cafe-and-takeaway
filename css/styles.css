@@ -1,3 +1,15 @@
+#message-important {
+  background-color: #e48900 !important; }
+
+#message-promotion {
+  background-color: #9ede73 !important; }
+
+#message-cookies {
+  background-color: #e48900 !important; }
+
+#nav-row {
+  background-color: #be0000 !important; }
+
 .jumbotron__bg {
   background: url(../img/hero__alex-harmuth-zIJfhf0VSvw-unsplash.jpg) no-repeat;
   background-size: cover;
@@ -6,7 +18,8 @@
 .frosted-glass {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(2px);
-  text-shadow: 0 0 10px white; }
+  text-shadow: 0 0 10px white;
+  border-radius: 5px; }
 
 footer {
   font-size: 0.8rem; }

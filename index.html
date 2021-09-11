@@ -22,25 +22,36 @@
       <div class="container">
         <!-- Header messages -->
         <div class="container">
-          <div class="row bg-danger text-light p-1" id="message-danger">
+          <div class="row bg-danger text-light p-1" id="message-important">
             <div class="col-1"></div>
-            <div class="col text-center">Important Info Here</div>
+            <div class="col text-center">
+              <a href="#message-important__text" id="message-important__title" data-toggle="collapse" class="text-white"></a>
+              <p id="message-important__text" class="collapse"></p>
+            </div>
             <div class="col-1 text-right">
-              <a href="#" class="text-light" data-target-id="message-danger">&times;</a>
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true" data-target-id="message-important">&times;</span>
+              </button>
+              <!-- <a href="#message-important" class="text-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="message-important">&times;</a> -->
             </div>
           </div>
-          <div class="row bg-warning text-light p-1" id="message-warning">
+          <div class="row bg-warning text-light p-1" id="message-promotion">
             <div class="col-1"></div>
-            <div class="col text-center">Promotional & Event Info Here</div>
+            <div class="col text-center">
+              <a id="message-promotion__title" data-toggle="collapse" href="#message-promotion__text" class="text-white"></a>
+              <p id="message-promotion__text" class="collapse"></p>
+            </div>
             <div class="col-1 text-right">
-              <a href="#" class="text-light" data-target-id="message-warning">&times;</a>
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true" data-target-id="message-promotion">&times;</span>
+              </button>
             </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="nav-row">
               <a class="navbar-brand" href="index.html">Cafe & Takeaway</a>
               <button
                 class="navbar-toggler"
@@ -278,9 +289,15 @@
 
         <div class="container">
           <div class="row bg-danger text-light p-1" id="message-cookies">
-            <div class="col text-center">Cookie Info Here</div>
+            <div class="col-1"></div>
+            <div class="col text-center">
+              <a id="message-cookies__title" data-toggle="collapse" class="text-white" href="#message-cookies__text"></a>
+              <p id="message-cookies__text" class="collapse"></p>
+            </div>
             <div class="col-1 text-right">
-              <a href="#" class="text-light" data-target-id="message-cookies">&times;</a>
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true" data-target-id="message-cookies">&times;</span>
+              </button>
             </div>
           </div>
         </div>

@@ -1,3 +1,24 @@
+$color-red: #be0000;
+$color-orange: #e48900;
+$color-yellow: #f7ea00;
+$color-mint: #9ede73;
+
+#message-important {
+  background-color: $color-orange !important;
+}
+
+#message-promotion {
+  background-color: $color-mint !important;
+}
+
+#message-cookies {
+  background-color: $color-orange !important;
+}
+
+#nav-row {
+  background-color: $color-red !important;
+}
+
 .jumbotron__bg {
   background: url(../img/hero__alex-harmuth-zIJfhf0VSvw-unsplash.jpg) no-repeat;
   background-size: cover;
@@ -8,6 +29,7 @@
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(2px);
   text-shadow: 0 0 10px white;
+  border-radius: 5px;
 }
 
 footer {

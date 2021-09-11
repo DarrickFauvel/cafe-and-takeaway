@@ -1,9 +1,20 @@
+import { message } from './messages.js'
+
 const hideMessage = (e) => {
   e.preventDefault()
   const targetId = e.target.dataset.targetId
-  document.getElementById(targetId).style.display = 'none'
+  document.getElementById(targetId).classList.add('d-none')
 }
 
-document.getElementById('message-danger').addEventListener('click', hideMessage)
-document.getElementById('message-warning').addEventListener('click', hideMessage)
+const populateMessage = (messageId, messageTitle, messageText) => {
+  document.getElementById(`message-${messageId}__title`).textContent = messageTitle
+  document.getElementById(`message-${messageId}__text`).textContent = messageText
+}
+
+document.getElementById('message-important').addEventListener('click', hideMessage)
+document.getElementById('message-promotion').addEventListener('click', hideMessage)
 document.getElementById('message-cookies').addEventListener('click', hideMessage)
+
+populateMessage('important', message.important.title, message.important.text)
+populateMessage('promotion', message.promotion.title, message.promotion.text)
+populateMessage('cookies', message.cookies.title, message.cookies.text)
