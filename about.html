@@ -15,85 +15,14 @@
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./components/cafe-header.js" type="module"></script>
+    <script src="./components/cafe-footer.js" type="module"></script>
+    <script src="./components/cafe-modal-order.js" type="module"></script>
+    <script src="./components/cafe-modal-login.js" type="module"></script>
     <title>About | Cafe & Takeaway</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <!-- Header messages -->
-        <div class="container">
-          <div class="row bg-danger text-light p-1" id="message-important">
-            <div class="col-1"></div>
-            <div class="col text-center">
-              <a href="#message-important__text" id="message-important__title" data-toggle="collapse" class="text-white"></a>
-              <p id="message-important__text" class="collapse"></p>
-            </div>
-            <div class="col-1 text-right">
-              <a href="#" class="text-light" data-target-id="message-important">&times;</a>
-            </div>
-          </div>
-          <div class="row bg-warning text-light p-1" id="message-promotion">
-            <div class="col-1"></div>
-            <div class="col text-center" id="message-">
-              <a id="message-promotion__title" data-toggle="collapse" href="#message-promotion__text" class="text-white"></a>
-              <p id="message-promotion__text" class="collapse"></p>
-            </div>
-            <div class="col-1 text-right">
-              <a href="#" class="text-light" data-target-id="message-promotion">&times;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-dark" id="nav-row">
-              <a class="navbar-brand" href="index.html">Cafe & Takeaway</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home </a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="menu.html#breakfast">Breakfast</a>
-                      <a class="dropdown-item" href="menu.html#lunch">Lunch</a>
-                      <a class="dropdown-item" href="menu.html#dinner">Dinner</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <cafe-header page="about"></cafe-header>
 
     <main>
       <div class="container">
@@ -120,43 +49,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md order-2 order-md-1">
-            <p class="my-0 py-2">
-              &copy; 2021 Cafe & Takeaway. All rights reserved.
-              <a href="" class="ml-2">Terms Of Use</a>
-              <a href="" class="ml-2">Your Privacy</a>
-            </p>
-          </div>
+    <cafe-footer></cafe-footer>
 
-          <div class="col-md order-1 order-md-2 d-flex justify-content-end">
-            <nav class="nav">
-              <a class="nav-link" href="index.html">Home</a>
-              <a class="nav-link" href="menu.html">Menu</a>
-              <a class="nav-link" href="about.html">About</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
-          </div>
-        </div>
+    <!-- Modal - Order -->
+    <cafe-modal-order></cafe-modal-order>
 
-        <div class="container">
-          <div class="row bg-danger text-light p-1" id="message-cookies">
-            <div class="col-1"></div>
-            <div class="col text-center">
-              <a id="message-cookies__title" data-toggle="collapse" class="text-white" href="#message-cookies__text"></a>
-              <p id="message-cookies__text" class="collapse"></p>
-            </div>
-            <div class="col-1 text-right">
-              <a href="#" class="text-light" data-target-id="message-cookies">&times;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Footer message -->
+    <!-- Modal - Login -->
+    <cafe-modal-login></cafe-modal-login>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

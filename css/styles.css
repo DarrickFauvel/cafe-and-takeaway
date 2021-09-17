@@ -6,8 +6,7 @@ body {
 
 h3,
 h5 {
-  font-weight: bold;
-  margin-bottom: 0; }
+  font-weight: bold; }
 
 #message-important {
   background-color: #e48900 !important; }
@@ -18,8 +17,48 @@ h5 {
 #message-cookies {
   background-color: #e48900 !important; }
 
-#nav-row {
-  background-color: #be0000 !important; }
+.cafe__font--display {
+  font-family: "Alice", serif; }
+
+.cafe__bg-primary {
+  background-color: #be0000;
+  color: lightgray; }
+
+.cafe__bg-secondary {
+  background-color: #9ede73;
+  color: darkslategrey; }
+
+.cafe__bg-color--red {
+  background-color: #be0000; }
+
+.cafe__bg-color--mint {
+  background-color: #9ede73; }
+
+.cafe__bg-gradient--orange-to-red {
+  background: #be0000;
+  background: linear-gradient(359deg, #be0000 25%, #e48900 100%); }
+
+.cafe__bg-gradient--red-to-orange {
+  background: #be0000;
+  background: linear-gradient(179deg, #be0000 25%, #e48900 100%); }
+
+.cafe__box-shadow--mint-top {
+  box-shadow: 0 -3px 0 0 #9ede73; }
+
+.cafe__box-shadow--mint-bottom {
+  box-shadow: 0 3px 0 0 #9ede73; }
+
+#cafe__main-nav-cart {
+  font-size: 0.8rem; }
+  #cafe__main-nav-cart .nav-link {
+    padding-bottom: 0; }
+
+#cafe__main-nav {
+  padding-top: 0; }
+
+.navbar-brand {
+  font-size: 2.5rem !important;
+  color: #eeeeee !important; }
 
 #order__button {
   border-radius: 50px;
@@ -31,31 +70,27 @@ h5 {
   background-size: cover;
   background-position: center; }
 
-footer {
-  font-size: 0.8rem; }
-
-.cafe__font--display {
-  font-family: "Alice", serif; }
-
-.cafe__main-nav--bottom {
-  box-shadow: 0 3px 0 0 #9ede73; }
-
-.navbar-brand {
-  font-size: 2.5rem !important;
-  color: #eeeeee !important; }
-
 .jumbotron__card {
   background-color: rgba(50, 50, 50, 0.7) !important; }
 
-#cart {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 0.8rem; }
-
 .carousel-caption {
   background-color: rgba(54, 54, 54, 0.253); }
+  .carousel-caption h5 {
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .carousel-caption .attribution {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    font-size: 0.7rem; }
+    .carousel-caption .attribution a {
+      color: white; }
 
-.carousel-caption h5 {
-  letter-spacing: 2px;
-  text-transform: uppercase; }
+footer {
+  font-size: 0.8rem;
+  color: gainsboro; }
+  footer a {
+    color: #c2beff !important; }
+    footer a :hover {
+      color: white !important; }

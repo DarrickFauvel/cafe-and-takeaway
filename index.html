@@ -15,102 +15,14 @@
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./components/cafe-header.js" type="module"></script>
+    <script src="./components/cafe-footer.js" type="module"></script>
+    <script src="./components/cafe-modal-order.js" type="module"></script>
+    <script src="./components/cafe-modal-login.js" type="module"></script>
     <title>Welcome | Cafe & Takeaway</title>
   </head>
   <body>
-    <header>
-      <div class="container fixed-top">
-        <!-- Header messages -->
-        <div class="container">
-          <div class="row bg-danger text-light p-1" id="message-important">
-            <div class="col-1"></div>
-            <div class="col text-center">
-              <a href="#message-important__text" id="message-important__title" data-toggle="collapse" class="text-white"></a>
-              <p id="message-important__text" class="collapse"></p>
-            </div>
-            <div class="col-1 text-right">
-              <button type="button" class="close" aria-label="Close">
-                <span aria-hidden="true" data-target-id="message-important">&times;</span>
-              </button>
-              <!-- <a href="#message-important" class="text-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="message-important">&times;</a> -->
-            </div>
-          </div>
-          <div class="row bg-warning text-light p-1" id="message-promotion">
-            <div class="col-1"></div>
-            <div class="col text-center">
-              <a id="message-promotion__title" data-toggle="collapse" href="#message-promotion__text" class="text-white"></a>
-              <p id="message-promotion__text" class="collapse"></p>
-            </div>
-            <div class="col-1 text-right">
-              <button type="button" class="close" aria-label="Close">
-                <span aria-hidden="true" data-target-id="message-promotion">&times;</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-dark cafe__main-nav--bottom p-xl-4 rounded-bottom position-relative" id="nav-row">
-              <ul id="cart" class="nav mr-4">
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-light d-flex pt-2">
-                    <div class="mr-1" style="width: 20px">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                      </svg>
-                    </div>
-                    <div class="text-nowrap">empty cart</div>
-                  </a>
-                </li>
-              </ul>
-
-              <a class="navbar-brand cafe__font--display" href="index.html">Cafe & Takeaway</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <!-- <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li> -->
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="menu.html#breakfast">Breakfast</a>
-                      <a class="dropdown-item" href="menu.html#lunch">Lunch</a>
-                      <a class="dropdown-item" href="menu.html#dinner">Dinner</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link ml-3" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link ml-3" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link ml-3" href="" data-toggle="modal" data-target="#login__modal">Sign In</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-dark ml-3" type="button" id="order__button" data-toggle="modal" data-target="order__modal">ORDER NOW</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <cafe-header></cafe-header>
 
     <main>
       <div class="container" style="margin-top: 130px">
@@ -157,17 +69,25 @@
               </ol>
               <div class="carousel-inner rounded">
                 <div class="carousel-item active">
-                  <img src="./img/slide/pancakes_portuguese-gravity-qq3hT-CYD1I-unsplash_600x100.jpg" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Pancakes</h5>
-                    <p>Any pancakes you cannot imagine.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
                   <img src="./img/slide/burgers_eiliv-sonas-aceron-mwbjyRUTlIQ-unsplash_600x100.jpg" class="d-block w-100" alt="..." />
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Burgers</h5>
                     <p>You know 'em. You love 'em. Meat between bread!</p>
+                    <p class="attribution">
+                      Photo by <a href="https://unsplash.com/@shootdelicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eiliv-Sonas Aceron</a> on
+                      <a href="https://unsplash.com/s/photos/burgers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/slide/pancakes_portuguese-gravity-qq3hT-CYD1I-unsplash_600x100.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pancakes</h5>
+                    <p>Any pancakes you cannot imagine.</p>
+                    <p class="attribution">
+                      Photo by <a href="https://unsplash.com/@portuguesegravity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Portuguese Gravity</a> on
+                      <a href="https://unsplash.com/s/photos/portuguese-pancakes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -175,6 +95,10 @@
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Dutch Babies</h5>
                     <p>It's not what you think.</p>
+                    <p class="attribution">
+                      Photo by <a href="https://unsplash.com/@sheri_silver?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sheri silver</a> on
+                      <a href="https://unsplash.com/s/photos/dutch-baby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -182,6 +106,10 @@
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Steak & Fries</h5>
                     <p>Meat not between bread. Naked meat.</p>
+                    <p class="attribution">
+                      Photo by <a href="https://unsplash.com/@covertnine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Toomey</a> on
+                      <a href="https://unsplash.com/s/photos/steak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -200,47 +128,24 @@
         <div class="row mt-5">
           <div class="col">
             <h3>Try These Favorites</h3>
-            <div class="row">
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
+
+            <div class="card-deck">
+              <div class="card text-white">
+                <img src="./img/originals/tim-toomey-pe9dvM1rQkM-unsplash.jpg" class="card-img-top" alt="..." />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Steak</h5>
                 </div>
+                <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
               </div>
 
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
+              <div class="card">
+                <img src="./img/originals/sheri-silver-7dyOM91vWXw-unsplash.jpg" class="card-img-top" alt="..." />
+                <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
               </div>
 
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
+              <div class="card">
+                <img src="./img/originals/eiliv-sonas-aceron-mwbjyRUTlIQ-unsplash.jpg" class="card-img-top" alt="..." />
+                <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
               </div>
             </div>
           </div>
@@ -298,126 +203,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md order-2 order-md-1">
-            <p class="my-0 py-2">
-              &copy; 2021 Cafe & Takeaway. All rights reserved.
-              <a href="" class="ml-2">Terms Of Use</a>
-              <a href="" class="ml-2">Your Privacy</a>
-            </p>
-          </div>
-
-          <div class="col-md order-1 order-md-2 d-flex justify-content-end">
-            <nav class="nav">
-              <a class="nav-link" href="index.html">Home</a>
-              <a class="nav-link" href="menu.html">Menu</a>
-              <a class="nav-link" href="about.html">About</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row bg-danger text-light p-1" id="message-cookies">
-            <div class="col-1"></div>
-            <div class="col text-center">
-              <a id="message-cookies__title" data-toggle="collapse" class="text-white" href="#message-cookies__text"></a>
-              <p id="message-cookies__text" class="collapse"></p>
-            </div>
-            <div class="col-1 text-right">
-              <button type="button" class="close" aria-label="Close">
-                <span aria-hidden="true" data-target-id="message-cookies">&times;</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Footer message -->
+    <cafe-footer></cafe-footer>
 
     <!-- Modal - Order -->
-    <div id="order__modal" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header bg-dark text-light">
-            <h5 class="modal-title">What kind of order would you like to place?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body bg-success">
-            <div class="card mb-3 border-0" style="max-width: 540px">
-              <a href="">
-                <div class="row no-gutters p-4">
-                  <div class="col-md-4">
-                    <img src="./img/icons/noun_curbside delivery_4051965.svg" class="card-img" alt="curbside delivery" />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Curbside Pickup</h5>
-                      <p class="card-text">Set a time to pickup fresh cafe food and we will bring it out to your vehicle.</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="card mb-3 border-0" style="max-width: 540px">
-              <div class="row no-gutters p-4">
-                <div class="col-md-4">
-                  <img src="./img/icons/noun_time machine_3883749.svg" class="card-img" alt="time machine" />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Time Machine Delivery</h5>
-                    <p class="card-text">Fresh cafe food delivered to you. When you need it yesterday!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <cafe-modal-order></cafe-modal-order>
 
     <!-- Modal - Login -->
-    <div id="login__modal" class="modal fade" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Sign In to My Cafe</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <cafe-modal-login></cafe-modal-login>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
