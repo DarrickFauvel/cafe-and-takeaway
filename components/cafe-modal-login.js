@@ -4,7 +4,7 @@ class CafeModalLogin extends HTMLElement {
       <div id="login__modal" class="modal fade" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header cafe__bg-secondary">
+            <div class="modal-header cafe__bg-gradient--red-to-orange text-light">
               <h5 class="modal-title">Sign In to My Cafe</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

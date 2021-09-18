@@ -79,6 +79,12 @@ h5 {
       box-shadow: 0 3px 0 0 $color-mint;
     }
   }
+
+  &__card-title {
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 1.4rem;
+  }
 }
 
 // Main top nav

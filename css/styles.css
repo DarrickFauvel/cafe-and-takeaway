@@ -48,6 +48,11 @@ h5 {
 .cafe__box-shadow--mint-bottom {
   box-shadow: 0 3px 0 0 #9ede73; }
 
+.cafe__card-title {
+  color: white;
+  text-shadow: 0 0 5px black;
+  font-size: 1.4rem; }
+
 #cafe__main-nav-cart {
   font-size: 0.8rem; }
   #cafe__main-nav-cart .nav-link {

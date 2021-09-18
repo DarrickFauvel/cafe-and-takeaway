@@ -4,13 +4,13 @@ class CafeModalOrder extends HTMLElement {
     <div id="order__modal" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header cafe__bg-secondary">
+        <div class="modal-header cafe__bg-gradient--red-to-orange text-light">
           <h5 class="modal-title">What kind of order would you like to place?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body bg-success">
+        <div class="modal-body cafe__bg-color--mint">
           <div class="card mb-3 border-0" style="max-width: 540px">
             <a href="">
               <div class="row no-gutters p-4">

@@ -4,7 +4,7 @@ class CafeFooter extends HTMLElement {
     <div class="container">
       <footer class="mt-5">
         <div class="container">
-          <div class="row cafe__bg-gradient--red-to-orange cafe__box-shadow--mint-top pt-2 pb-2 rounded-top">
+          <div class="row cafe__bg-gradient--orange-to-red cafe__box-shadow--mint-top pt-2 pb-2 rounded-top">
             <div class="col-md order-2 order-md-1">
               <p class="my-0 py-2">
                 &copy; 2021 Cafe & Takeaway. All rights reserved.

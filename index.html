@@ -19,6 +19,7 @@
     <script src="./components/cafe-footer.js" type="module"></script>
     <script src="./components/cafe-modal-order.js" type="module"></script>
     <script src="./components/cafe-modal-login.js" type="module"></script>
+    <script src="./components/cafe-card-food.js" type="module"></script>
     <title>Welcome | Cafe & Takeaway</title>
   </head>
   <body>
@@ -58,7 +59,7 @@
         </div>
 
         <!-- Carousel -->
-        <div class="row">
+        <div class="row d-none d-md-block">
           <div class="col">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -74,8 +75,8 @@
                     <h5>Burgers</h5>
                     <p>You know 'em. You love 'em. Meat between bread!</p>
                     <p class="attribution">
-                      Photo by <a href="https://unsplash.com/@shootdelicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eiliv-Sonas Aceron</a> on
-                      <a href="https://unsplash.com/s/photos/burgers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                      Photo by <a target="blank" href="https://unsplash.com/@shootdelicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eiliv-Sonas Aceron</a> on
+                      <a target="blank" href="https://unsplash.com/s/photos/burgers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                   </div>
                 </div>
@@ -85,8 +86,8 @@
                     <h5>Pancakes</h5>
                     <p>Any pancakes you cannot imagine.</p>
                     <p class="attribution">
-                      Photo by <a href="https://unsplash.com/@portuguesegravity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Portuguese Gravity</a> on
-                      <a href="https://unsplash.com/s/photos/portuguese-pancakes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                      Photo by <a target="blank" href="https://unsplash.com/@portuguesegravity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Portuguese Gravity</a> on
+                      <a target="blank" href="https://unsplash.com/s/photos/portuguese-pancakes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                   </div>
                 </div>
@@ -96,8 +97,8 @@
                     <h5>Dutch Babies</h5>
                     <p>It's not what you think.</p>
                     <p class="attribution">
-                      Photo by <a href="https://unsplash.com/@sheri_silver?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sheri silver</a> on
-                      <a href="https://unsplash.com/s/photos/dutch-baby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                      Photo by <a target="blank" href="https://unsplash.com/@sheri_silver?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sheri silver</a> on
+                      <a target="blank" href="https://unsplash.com/s/photos/dutch-baby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                   </div>
                 </div>
@@ -107,8 +108,8 @@
                     <h5>Steak & Fries</h5>
                     <p>Meat not between bread. Naked meat.</p>
                     <p class="attribution">
-                      Photo by <a href="https://unsplash.com/@covertnine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Toomey</a> on
-                      <a href="https://unsplash.com/s/photos/steak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                      Photo by <a target="blank" href="https://unsplash.com/@covertnine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Toomey</a> on
+                      <a target="blank" href="https://unsplash.com/s/photos/steak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                   </div>
                 </div>
@@ -129,23 +130,33 @@
           <div class="col">
             <h3>Try These Favorites</h3>
 
-            <div class="card-deck">
-              <div class="card text-white">
-                <img src="./img/originals/tim-toomey-pe9dvM1rQkM-unsplash.jpg" class="card-img-top" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Steak</h5>
-                </div>
-                <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
+            <div class="row">
+              <div class="col-md">
+                <cafe-card-food
+                  title="Steak"
+                  image="steak_tim-toomey-pe9dvM1rQkM-unsplash_400x250.jpg"
+                  artist-name="Tim Toomey"
+                  artist-page="https://unsplash.com/@covertnine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  result-page="https://unsplash.com/s/photos/steak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                ></cafe-card-food>
               </div>
-
-              <div class="card">
-                <img src="./img/originals/sheri-silver-7dyOM91vWXw-unsplash.jpg" class="card-img-top" alt="..." />
-                <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
+              <div class="col-md">
+                <cafe-card-food
+                  title="Dutch Baby"
+                  image="dutch-baby_sheri-silver-7dyOM91vWXw-unsplash_400x250.jpg"
+                  artist-name="sheri silver"
+                  artist-page="https://unsplash.com/@sheri_silver?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  result-page="https://unsplash.com/s/photos/dutch-baby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                ></cafe-card-food>
               </div>
-
-              <div class="card">
-                <img src="./img/originals/eiliv-sonas-aceron-mwbjyRUTlIQ-unsplash.jpg" class="card-img-top" alt="..." />
-                <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
+              <div class="col-md">
+                <cafe-card-food
+                  title="Burger"
+                  image="burgers_eiliv-sonas-aceron-mwbjyRUTlIQ-unsplash_400x250.jpg"
+                  artist-name="Eiliv-Sonas Aceron"
+                  artist-page="https://unsplash.com/@shootdelicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  result-page="https://unsplash.com/s/photos/burgers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                ></cafe-card-food>
               </div>
             </div>
           </div>
@@ -155,46 +166,32 @@
           <div class="col">
             <h3>We Think You'll Like</h3>
             <div class="row">
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
+              <div class="col-md">
+                <cafe-card-food
+                  title="Pancakes"
+                  image="pancakes_portuguese-gravity-qq3hT-CYD1I-unsplash_400x250.jpg"
+                  artist-name="Portuguese Gravity"
+                  artist-page="https://unsplash.com/@portuguesegravity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  result-page="https://unsplash.com/s/photos/portuguese-pancakes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                ></cafe-card-food>
               </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
+              <div class="col-md">
+                <cafe-card-food
+                  title="Salad"
+                  image="salad_anna-pelzer-IGfIGP5ONV0-unsplash_400x250.jpg"
+                  artist-name="Anna Pelzer"
+                  artist-page="https://unsplash.com/@annapelzer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  result-page="https://unsplash.com/s/photos/salad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                ></cafe-card-food>
               </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 col-lg-2 py-3">
-                <div class="card">
-                  <img src="https://via.placeholder.com/100?text=Food Item" class="card-img-top" alt="..." />
-                  <a href="#" class="card-footer bg-primary text-light py-2 text-center">Add to Cart</a>
-                </div>
+              <div class="col-md">
+                <cafe-card-food
+                  title="Chicken Wings"
+                  image="chicken-wings_scott-eckersley-R-7_ErUOLxw-unsplash_400x250.jpg"
+                  artist-name="Scott Eckersley"
+                  artist-page="https://unsplash.com/@scotteckersley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  result-page="https://unsplash.com/s/photos/chicken-wings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                ></cafe-card-food>
               </div>
             </div>
           </div>
